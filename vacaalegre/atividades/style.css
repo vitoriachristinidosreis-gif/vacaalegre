@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin-top: 0;
+    padding: 0;
+}
+
+body {
+    background-color: fff;
+    color: blueviolet;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 48px;
+    position: sticky;
+    background-color: rgba(255, 255, 255, 0.92);
+    top: 0;
+    backdrop-filter: blur(12px);
+    border-bottom: 2px solid rgb(108, 43, 255, 0.07);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: uppercase;
+    color: #5a4b7a;
+}
+
+.nav-links a:hover {
+    color: purple;
+}
+
+.nav-action {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav-cart {
+    color: #5a4b7a;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-entrar {
+    background-color: mediumpurple;
+    color: white;
+    border: none;
+    padding: 9px 20px;
+    cursor: pointer;
+    gap: 6px;
+    transform: background .2s transform .15s;
+}
+
+.btn-entrar:hover {
+    background-color: lightblue;
+    transform: translateY (-1px);
+}
+
+.btn-entrar svg {
+    width: 14px;
+    height: 14px;
+}
+
+.hero {
+    padding: 60px 48px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.hero-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 400px;
+}
+
+.hero-title {
+    font-family: "Noto Serif", serif;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: .85;
+    letter-spacing: -5px;
+    color: rgb(190, 99, 255);
+}
+
+.hero-title .alegre {
+    color: rgb(249, 140, 236);
+}
+
+.hero-menu {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: auto;
+}
+
+.hero-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    background-color: beige;
+    border-radius: 40px;
+    padding: 7px 16px;
+    width: fit-content;
+    cursor: pointer;
+    transition: background .2s;
+    font-size: 12px;
+}
+.hero-menu-item:hover{
+    background-color: rgb(249, 249, 233);
+}
+.hero-menu-item svg{
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
